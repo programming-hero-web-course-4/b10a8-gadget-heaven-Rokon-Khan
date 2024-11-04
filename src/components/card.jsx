@@ -1,37 +1,32 @@
-import { Link, useLocation } from 'react-router-dom'
-/* eslint-disable react/prop-types */
-const Card = ({ coffee, handleRemove }) => {
-  const { pathname } = useLocation()
-  const { name, image, category, origin, type, id, rating, popularity } =
-    coffee || {}
+import { Link, useLocation } from "react-router-dom";
+const Card = ({ product, handleRemove }) => {
+  const { pathname } = useLocation();
+  const { id, title, brand, image, category, rating } = product || {};
 
   return (
-    <div className='flex relative'>
+    <div className="flex relative">
       <Link
-        to={`/coffee/${id}`}
-        className='transition  hover:scale-105 shadow-xl rounded-xl overflow-hidden'
+        to={`/product/${id}`}
+        className="transition  hover:scale-105 shadow-xl rounded-xl overflow-hidden"
       >
-        <figure className='w-full h-48 overflow-hidden'>
-          <img className='' src={image} alt='' />
+        <figure className="w-full h-48 overflow-hidden">
+          <img className="" src={image} alt="" />
         </figure>
-        <div className='p-4'>
-          <h1 className='text-xl'>Name: {name}</h1>
+        <div className="p-4">
+          <h1 className="text-xl">Name: {title}</h1>
           <p>Category: {category}</p>
-          <p>Type: {type}</p>
-          <p>Origin: {origin}</p>
+          <p>Brand: {brand}</p>
           <p>Rating: {rating}</p>
-          <p>Popular: {popularity}</p>
         </div>
       </Link>
-      {pathname === '/dashboard' && (
+      {pathname === "/dashboard" && (
         <div
           onClick={() => handleRemove(id)}
-          className='absolute p-3 rounded-full cursor-pointer bg-warning -top-5 -right-5'
-        >
-        </div>
+          className="absolute p-3 rounded-full cursor-pointer bg-warning -top-5 -right-5"
+        ></div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

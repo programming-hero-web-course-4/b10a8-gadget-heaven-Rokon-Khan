@@ -3,10 +3,10 @@
     "id": 1,
     "title": "iPhone 13",
     "brand": "Apple",
-    "image": "images/iphone_13.jpg",
+    "image": "https://i.ibb.co.com/gZyfZnp/i-Phone-13.jpg",
     "category": "Smartphone",
     "price": 799.99,
-    "description": "https://i.ibb.co.com/gZyfZnp/i-Phone-13.jpg",
+    "description": "The latest iPhone with a powerful A15 Bionic chip.",
     "specification": [
       "4GB RAM",
       "128GB Storage",

@@ -33,8 +33,8 @@ const Navbar = () => {
               <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-6">
                     <Link to="/">Home</Link>
-                    <Link to="/Statistics">Statistics</Link>
-                    <Link to="/Dashboard">Dashboard</Link>
+                    <Link to="/statistics">Statistics</Link>
+                    <Link to="/dashboard">Dashboard</Link>
                 </ul>
               </div>
               <div className="navbar-end gap-5">
