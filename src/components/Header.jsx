@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
 
-const Navbar = () => {
+import { Link } from "react-router-dom";
+const Header = () => {
     return (
         <div>
-           <div className="navbar bg-base-100">
-            <div className="navbar-start">
+        <div className="bg-[#9538E2] max-w-[1540px] min-h-[694px] flex flex-col items-center rounded-2xl p-6 mx-auto">
+                {/* Navbar  */}
+            <div className="navbar ">
+             <div className="navbar-start">
               <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                   <svg
@@ -42,8 +44,21 @@ const Navbar = () => {
                 <i className="fa-regular fa-heart text-2xl"></i>
               </div>
           </div> 
+                
+                
+                
+                <div className="hero-content  text-white">
+                    <div className="text-center">
+                    <h1 className="text-[56px] font-bold max-w-[1120px]">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
+                    <p className="py-6 max-w-[796px] text-center mx-auto text-base">
+                    Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
+                    </p>
+                    <button className="btn bg-white rounded-full text-[#9538E2]">Shop Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
 
-export default Navbar;
+export default Header;

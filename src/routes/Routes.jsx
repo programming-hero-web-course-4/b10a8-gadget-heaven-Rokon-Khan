@@ -5,24 +5,33 @@ import Home from "../pages/Home";
 import Statistics from "../pages/Statistics";
 
 const router = createBrowserRouter([
+    
     {
       path: "/",
+      element: <Home></Home>
+    },
+      
+    {
+      path: "/statistics",
       element: <MainLaout></MainLaout>,
       children: [
-        {
-            path: "/",
-            element: <Home></Home>
-        },
         {
             path: "/statistics",
             element: <Statistics></Statistics>
         },
+      ]
+    },
+    {
+      path: "/dashboard",
+      element: <MainLaout></MainLaout>,
+      children: [
         {
             path: "/dashboard",
             element: <Dashboard></Dashboard>
         },
       ]
     },
+    
     
   ]);
 

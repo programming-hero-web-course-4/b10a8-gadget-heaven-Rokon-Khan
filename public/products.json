@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "title": "iPhone 13",
+    "brand": "Apple",
+    "image": "images/iphone_13.jpg",
+    "category": "Smartphone",
+    "price": 799.99,
+    "description": "https://i.ibb.co.com/gZyfZnp/i-Phone-13.jpg",
+    "specification": [
+      "4GB RAM",
+      "128GB Storage",
+      "12MP Dual Camera",
+      "6.1 inch Super Retina XDR Display"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "id": 2,
+    "title": "Samsung Galaxy S21",
+    "brand": "Samsung",
+    "image": "https://i.ibb.co.com/vxV1Wwd/Samsung-Galaxy-S21.jpg",
+    "category": "Smartphone",
+    "price": 699.99,
+    "description": "A flagship Samsung phone with a stunning display.",
+    "specification": [
+      "8GB RAM",
+      "128GB Storage",
+      "64MP Triple Camera",
+      "6.2 inch Dynamic AMOLED 2X Display"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "id": 3,
+    "title": "Google Pixel 6",
+    "brand": "Google",
+    "image": "https://i.ibb.co.com/25gjxmG/Google-Pixel-6.jpg",
+    "category": "Smartphone",
+    "price": 599.99,
+    "description": "The latest Google Pixel phone with pure Android experience.",
+    "specification": [
+      "8GB RAM",
+      "128GB Storage",
+      "50MP Dual Camera",
+      "6.4 inch OLED Display"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "id": 4,
+    "title": "iPhone 12",
+    "brand": "Apple",
+    "image": "https://i.ibb.co.com/wCMLqRp/i-Phone-12.jpg",
+    "category": "Smartphone",
+    "price": 699.99,
+    "description": "A previous generation iPhone with excellent performance.",
+    "specification": [
+      "4GB RAM",
+      "64GB Storage",
+      "12MP Dual Camera",
+      "6.1 inch Super Retina XDR Display"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "title": "Samsung Galaxy A52",
+    "brand": "Samsung",
+    "image": "https://i.ibb.co.com/ZfNHzRB/Samsung-Galaxy-A52.jpg",
+    "category": "Smartphone",
+    "price": 499.99,
+    "description": "A mid-range Samsung phone with excellent value.",
+    "specification": [
+      "6GB RAM",
+      "128GB Storage",
+      "64MP Quad Camera",
+      "6.5 inch Super AMOLED Display"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "id": 6,
+    "title": "Samsung Galaxy Z Flip3",
+    "brand": "Samsung",
+    "image": "https://i.ibb.co.com/d7hQzby/Samsung-Galaxy-Z-Flip3-5-G.jpg",
+    "category": "Smartphone",
+    "price": 999.99,
+    "description": "A foldable smartphone with a unique design.",
+    "specification": [
+      "8GB RAM",
+      "128GB Storage",
+      "12MP Dual Camera",
+      "6.7 inch Foldable Dynamic AMOLED 2X Display"
+    ],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "id": 7,
+    "title": "MacBook Pro 14-inch",
+    "brand": "Apple",
+    "image": "https://i.ibb.co.com/6sfyLGr/Mac-Book-Pro-14-inch.jpg",
+    "category": "Laptop",
+    "price": 1999.99,
+    "description": "A high-performance laptop for professionals.",
+    "specification": [
+      "16GB RAM",
+      "512GB SSD",
+      "Apple M1 Pro Processor",
+      "14.2 inch Liquid Retina XDR Display"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "id": 8,
+    "title": "Dell XPS 13",
+    "brand": "Dell",
+    "image": "https://i.ibb.co.com/2ZD10Bv/Dell-XPS-13.jpg",
+    "category": "Laptop",
+    "price": 1399.99,
+    "description": "A sleek, high-performance laptop for everyday use.",
+    "specification": [
+      "16GB RAM",
+      "512GB SSD",
+      "Intel Core i7 Processor",
+      "13.4 inch FHD+ Display"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": 9,
+    "title": "Apple AirPods Pro",
+    "brand": "Apple",
+    "image": "https://i.ibb.co.com/1mS6fQS/Air-Pods-Pro.jpg",
+    "category": "Gadget",
+    "price": 249.99,
+    "description": "Wireless earbuds with active noise cancellation.",
+    "specification": [
+      "4.5 hours Battery Life (ANC on)",
+      "IPX4 Water Resistance",
+      "Bluetooth 5.0 Connectivity"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "id": 10,
+    "title": "Samsung Galaxy Watch 4",
+    "brand": "Samsung",
+    "image": "https://i.ibb.co.com/rM01jF2/Samsung-galaxy-watch4.png",
+    "category": "Gadget",
+    "price": 279.99,
+    "description": "A smartwatch with advanced health tracking features.",
+    "specification": [
+      "1.4 inch Super AMOLED Display",
+      "40 hours Battery Life",
+      "Bluetooth, Wi-Fi Connectivity"
+    ],
+    "availability": true,
+    "rating": 4.5
+  }
+]
