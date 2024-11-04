@@ -8,7 +8,13 @@ const router = createBrowserRouter([
     
     {
       path: "/",
-      element: <Home></Home>
+      element: <Home></Home>,
+      loader: () => fetch('../categories.json'),
+    },
+    {
+      path: '/category/:category',
+      element: <ProductCards></ProductCards>,
+      loader: () => fetch('../coffees.json'),
     },
       
     {

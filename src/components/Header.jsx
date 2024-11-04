@@ -24,24 +24,24 @@ const Header = () => {
                 </div>
                   <ul
                     tabIndex={0}
-                    className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    className="menu menu-sm dropdown-content bg-base-100 text-lg font-bold text-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
                     <Link to="/">Home</Link>
                     <Link to="/Statistics">Statistics</Link>
                     <Link to="/Dashboard">Dashboard</Link>
                   </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Gadget Heaven</a>
+                <a className="btn btn-ghost text-xl text-white font-bold">Gadget Heaven</a>
               </div>
               <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 gap-6">
+                <ul className="menu menu-horizontal text-lg text-white px-1 gap-6">
                     <Link to="/">Home</Link>
                     <Link to="/Statistics">Statistics</Link>
                     <Link to="/Dashboard">Dashboard</Link>
                 </ul>
               </div>
               <div className="navbar-end gap-5">
-                <i className="fa-solid fa-cart-shopping text-2xl"></i>
-                <i className="fa-regular fa-heart text-2xl"></i>
+                <i className="fa-solid fa-cart-shopping text-2xl bg-white p-3 rounded-full"></i>
+                <i className="fa-regular fa-heart text-2xl bg-white p-3 rounded-full"></i>
               </div>
           </div> 
                 
