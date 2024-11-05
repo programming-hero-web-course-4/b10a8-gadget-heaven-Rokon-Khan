@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import ProductCards from "../components/ProductCards";
 import MainLaout from "../layouts/MainLayout";
+import CardDetails from "../pages/CardDetails";
 import Dashboard from "../pages/Dashboard";
 import Home from "../pages/Home";
 import Statistics from "../pages/Statistics";
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
   //   element: <ProductCards></ProductCards>,
   //   loader: () => fetch('../coffees.json'),
   // },
+  {
+    path: "/product/:id",
+    element: <CardDetails></CardDetails>,
+    loader: () => fetch("../products.json"),
+  },
 
   {
     path: "/statistics",

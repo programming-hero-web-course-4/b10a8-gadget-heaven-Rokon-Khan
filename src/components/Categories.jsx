@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 const Categories = ({ categories }) => {
   return (
-    <div>
+    <div className="grid grid-cols-1 gap-5 p-6">
       {categories.map((category) => (
         <Link
           key={category.category}
           to={`/category/${category.category}`}
-          role="tab"
-          className="tab"
+          className="btn"
         >
           {category.category}
         </Link>

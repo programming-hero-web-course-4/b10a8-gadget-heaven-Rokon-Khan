@@ -26,9 +26,9 @@ const ProductCards = () => {
           <Card key={product.id} product={product} />
         ))}
       </div>
-      <button className="btn btn-warning" onClick={() => navigate("/product")}>
+      {/* <button className="btn btn-warning" onClick={() => navigate("/product")}>
         View All
-      </button>
+      </button> */}
     </>
   );
 };
