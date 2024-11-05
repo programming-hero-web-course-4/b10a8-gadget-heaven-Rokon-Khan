@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <div>
@@ -25,18 +25,50 @@ const Header = () => {
                   <ul
                     tabIndex={0}
                     className="menu menu-sm dropdown-content bg-base-100 text-lg font-bold text-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <Link to="/">Home</Link>
-                    <Link to="/Statistics">Statistics</Link>
-                    <Link to="/Dashboard">Dashboard</Link>
+                    <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'text-[#9538E2]' : 'hover:text-[#9538E2]'}`
+                    }
+                      to='/'
+                    >Home</NavLink>
+                    <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'text-[#9538E2]' : 'hover:text-[#9538E2]'}`
+                    }
+                      to='/Statistics'
+                    >Statistics</NavLink>
+                    <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'text-[#9538E2]' : 'hover:text-[#9538E2]'}`
+                    }
+                      to='/Dashboard'
+                    >Dasboard
+                  </NavLink>
                   </ul>
                 </div>
                 <a className="btn btn-ghost text-xl text-white font-bold">Gadget Heaven</a>
               </div>
               <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal text-lg text-white px-1 gap-6">
-                    <Link to="/">Home</Link>
-                    <Link to="/Statistics">Statistics</Link>
-                    <Link to="/Dashboard">Dashboard</Link>
+                <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'bg-[#1a2070] p-2  rounded-xl' : 'hover:bg-[#1a2070] p-2  rounded-xl'}`
+                    }
+                      to='/'
+                    >Home</NavLink>
+                    <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'bg-[#1a2070] p-2 rounded-xl' : 'hover:bg-[#1a2070] p-2  rounded-xl'}`
+                    }
+                      to='/Statistics'
+                    >Statistics</NavLink>
+                    <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'bg-[#1a2070] p-2  rounded-xl' : 'hover:bg-[#1a2070] p-2  rounded-xl'}`
+                    }
+                      to='/Dashboard'
+                    >Dasboard
+                  </NavLink>
                 </ul>
               </div>
               <div className="navbar-end gap-5">

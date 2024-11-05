@@ -76,8 +76,8 @@ const cardDetails = () => {
           <i className="fa-regular fa-star"></i>
              {rating}
           </div>
-      <button className="btn bg-[#9538E2] text-white">Add To Cart <i className="fa-solid fa-cart-shopping text-2xl "></i></button>
-      <button className="btn"><i className="fa-regular fa-heart text-2xl bg-white p-3 rounded-full"></i></button>
+      <button to="/dashboard" className="btn bg-[#9538E2] text-white">Add To Cart <i className="fa-solid fa-cart-shopping text-2xl "></i></button>
+      <button to="/dashboard" className="btn"><i className="fa-regular fa-heart text-2xl bg-white p-3 rounded-full"></i></button>
 
     </div>
   </div>

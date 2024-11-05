@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -23,18 +23,54 @@ const Navbar = () => {
                   <ul
                     tabIndex={0}
                     className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <Link to="/">Home</Link>
+                    <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'text-[#9538E2]' : 'hover:text-warning'}`
+                    }
+                      to='/'
+                    >Home</NavLink>
+                    <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'text-[#9538E2]' : 'hover:text-warning'}`
+                    }
+                      to='/Statistics'
+                    >Statistics</NavLink>
+                    <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'text-[#9538E2]' : 'hover:text-warning'}`
+                    }
+                      to='/Dashboard'
+                    >Dasboard</NavLink>
+                    {/* <Link to="/">Home</Link>
                     <Link to="/Statistics">Statistics</Link>
-                    <Link to="/Dashboard">Dashboard</Link>
+                    <Link to="/Dashboard">Dashboard</Link> */}
                   </ul>
                 </div>
                 <a className="btn btn-ghost text-xl">Gadget Heaven</a>
               </div>
               <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-6">
-                    <Link to="/">Home</Link>
+                <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'text-[#9538E2]' : 'hover:text-[#9538E2]'}`
+                    }
+                      to='/'
+                    >Home</NavLink>
+                    <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'text-[#9538E2]' : 'hover:text-[#9538E2]'}`
+                    }
+                      to='/Statistics'
+                    >Statistics</NavLink>
+                    <NavLink
+                    className={({ isActive }) =>
+                      `font-bold ${isActive ? 'text-[#9538E2]' : 'hover:text-[#9538E2]'}`
+                    }
+                      to='/Dashboard'
+                    >Dasboard</NavLink>
+                    {/* <Link to="/">Home</Link>
                     <Link to="/statistics">Statistics</Link>
-                    <Link to="/dashboard">Dashboard</Link>
+                    <Link to="/dashboard">Dashboard</Link> */}
                 </ul>
               </div>
               <div className="navbar-end gap-5">
