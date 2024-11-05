@@ -38,8 +38,8 @@ const Navbar = () => {
                 </ul>
               </div>
               <div className="navbar-end gap-5">
-                <i className="fa-solid fa-cart-shopping text-2xl"></i>
-                <i className="fa-regular fa-heart text-2xl"></i>
+                <i className="fa-solid fa-cart-shopping text-2xl bg-white p-3 rounded-full"></i>
+                <i className="fa-regular fa-heart text-2xl bg-white p-3 rounded-full"></i>
               </div>
           </div> 
         </div>

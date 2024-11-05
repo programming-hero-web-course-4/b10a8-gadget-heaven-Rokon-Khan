@@ -15,7 +15,8 @@ const ProductCards = () => {
       );
       setProduct(filteredByCategory);
     } else {
-      setProduct(data.slice(0, 6));
+      // setProduct(data.slice(0, 6));
+      setProduct(data);
     }
   }, [category, data]);
   console.log(data);
