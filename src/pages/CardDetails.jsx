@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 import { useLoaderData, useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { addTOCart } from "../utilities/main";
+import { addTOCart, addTOWishList } from "../utilities/main";
 // import { addFavorite, getAllFavorites } from "../utils";
 const cardDetails = () => {
   const data = useLoaderData();
@@ -40,6 +40,9 @@ const cardDetails = () => {
     // setIsFavorite(true);
     addTOCart(product);
     // getAllCarts();
+  };
+  const handleAddToWishlist = (product) => {
+    addTOWishList(product);
   };
   return (
     <div>
@@ -97,7 +100,11 @@ const cardDetails = () => {
               Add To Cart{" "}
               <i className="fa-solid fa-cart-shopping text-2xl "></i>
             </button>
-            <button to="/dashboard" className="btn">
+            <button
+              to="/dashboard"
+              onClick={() => handleAddToWishlist(product)}
+              className="btn"
+            >
               <i className="fa-regular fa-heart text-2xl bg-white p-3 rounded-full"></i>
             </button>
             <Toaster></Toaster>

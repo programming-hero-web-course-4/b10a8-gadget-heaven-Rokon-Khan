@@ -1,5 +1,5 @@
 const Cart = ({ product }) => {
-  const { id, title, image, description, price } = product;
+  const { title, image, description, price } = product;
   return (
     <div className="mb-6">
       <div className="flex gap-6 items-center border border-zinc-200 bg-white rounded-lg">

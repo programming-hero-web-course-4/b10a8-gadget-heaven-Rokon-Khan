@@ -22,9 +22,18 @@ const addTOCart = (product) => {
   if (isExist) return toast.error("This Product already Add To Cart!");
   carts.push(product);
   localStorage.setItem("carts", JSON.stringify(carts));
-  toast.success("Add to CartSuccessfully added!");
+  toast.success("Add to Cart Successfully added!");
+};
+// Add to Wishlist
+const addTOWishList = (product) => {
+  const carts = getAllCarts();
+  const isExist = carts.find((item) => item.id == product.id);
+  if (isExist) return toast.error("This Product already  Wishlist!");
+  carts.push(product);
+  localStorage.setItem("carts", JSON.stringify(carts));
+  toast.success("Wishlist Successfully added!");
 };
 
 // Remove product from local Storage
 
-export { addTOCart, getAllCarts };
+export { addTOCart, getAllCarts, addTOWishList };

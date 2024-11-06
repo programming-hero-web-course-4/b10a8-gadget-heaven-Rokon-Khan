@@ -1,5 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
+import Cart from "../components/Cart";
 import ProductCards from "../components/ProductCards";
+import Wishlist from "../components/Wishlist";
 import MainLaout from "../layouts/MainLayout";
 import CardDetails from "../pages/CardDetails";
 import Dashboard from "../pages/Dashboard";
@@ -12,11 +14,6 @@ const router = createBrowserRouter([
     element: <Home></Home>,
     loader: () => fetch("../categories.json"),
     children: [
-      // {
-      //   path: "/",
-      //   element: <ProductCards></ProductCards>,
-      //   loader: () => fetch("../products.json"),
-      // },
       {
         path: "/category/:category",
         element: <ProductCards></ProductCards>,
@@ -24,11 +21,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-  // {
-  //   path: '/category/:category',
-  //   element: <ProductCards></ProductCards>,
-  //   loader: () => fetch('../coffees.json'),
-  // },
   {
     path: "/product/:id",
     element: <CardDetails></CardDetails>,
@@ -52,6 +44,16 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+        children: [
+          {
+            path: "/dashboard/cart",
+            element: <Cart></Cart>,
+          },
+          {
+            path: "/dashboard/wishlist",
+            element: <Wishlist></Wishlist>,
+          },
+        ],
       },
     ],
   },

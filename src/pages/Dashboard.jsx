@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
 import Cart from "../components/Cart";
 import { getAllCarts } from "../utilities/main";
 
@@ -28,6 +29,26 @@ const Dashboard = () => {
           <button className="btn text-lg font-bold rounded-full">
             Wishlisht
           </button>
+          {/* <NavLink
+            className={({ isActive }) =>
+              `font-bold ${
+                isActive ? "text-[#9538E2]" : "hover:text-[#9538E2]"
+              }`
+            }
+            to="/dashboard/cart"
+          >
+            Cart
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              `font-bold ${
+                isActive ? "text-[#9538E2]" : "hover:text-[#9538E2]"
+              }`
+            }
+            to="/dashboard/wishlist"
+          >
+            Wishlist
+          </NavLink> */}
         </div>
       </div>
 
@@ -40,6 +61,7 @@ const Dashboard = () => {
           ></Cart>
         ))}
       </div>
+      <Outlet></Outlet>
     </div>
   );
 };
