@@ -1,3 +1,5 @@
+import { FiHeart } from "react-icons/fi";
+import { IoCartOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -101,8 +103,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-5">
-          <i className="fa-solid fa-cart-shopping text-2xl bg-zinc-200 p-3 rounded-full"></i>
-          <i className="fa-regular fa-heart text-2xl bg-zinc-200 p-3 rounded-full"></i>
+        <IoCartOutline  className="text-5xl bg-zinc-200 p-2 rounded-full"/>
+        <FiHeart className="text-5xl bg-zinc-200 p-2 rounded-full"/>
+          {/* <i className="fa-regular fa-heart text-2xl bg-zinc-200 p-3 rounded-full"></i> */}
         </div>
       </div>
     </div>
