@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+ 
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
@@ -97,7 +97,7 @@ const cardDetails = () => {
               onClick={() => handleAddToCart(product)}
               className="btn bg-[#9538E2] text-white"
             >
-              Add To Cart{" "}
+              Add To Cart
               <i className="fa-solid fa-cart-shopping text-2xl "></i>
             </button>
             <button

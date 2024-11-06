@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Cart from "../components/Cart";
-import { getAllCarts } from "../utilities/main";
+import Wishlist from "../components/Wishlist";
+import { getAllCarts, removeAddToCart } from "../utilities/main";
 
 const Dashboard = () => {
   const [products, setProducts] = useState([]);
@@ -10,7 +11,7 @@ const Dashboard = () => {
     setProducts(carts);
   }, []);
   const handleRemove = (id) => {
-    removeFavorite(id);
+    removeAddToCart(id)
     const carts = getAllCarts();
     setProducts(carts);
   };
@@ -51,7 +52,7 @@ const Dashboard = () => {
           </NavLink> */}
         </div>
       </div>
-
+        {/* For Cart Components */}
       <div className="max-w-[1024px] py-4 rounded-xl mx-auto">
         {products.map((product) => (
           <Cart
@@ -59,6 +60,16 @@ const Dashboard = () => {
             key={product.id}
             product={product}
           ></Cart>
+        ))}
+      </div>
+      {/* For Wishlist Component */}
+      <div className="max-w-[1024px] py-4 rounded-xl mx-auto">
+        {products.map((product) => (
+          <Wishlist
+            key={product.id}
+            product={product}
+          ></Wishlist>
+          
         ))}
       </div>
       <Outlet></Outlet>

@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 const getAllCarts = () => {
   //   const all = localStorage.getItem("carts");
   const all = localStorage.getItem("carts");
-  const carts = JSON.parse(all);
+  // const carts = JSON.parse(all);
   //   console.log(carts);
   if (all) {
     const carts = JSON.parse(all);
@@ -36,4 +36,12 @@ const addTOWishList = (product) => {
 
 // Remove product from local Storage
 
-export { addTOCart, getAllCarts, addTOWishList };
+const removeAddToCart = id => {
+  const removeCarts = getAllCarts()
+  const remaining = removeCarts.filter(product => product.id != id)
+  localStorage.setItem("carts", JSON.stringify(remaining))
+  toast.success('Cart Removed Successfully!!!')
+}
+
+export { addTOCart, addTOWishList, getAllCarts, removeAddToCart };
+
