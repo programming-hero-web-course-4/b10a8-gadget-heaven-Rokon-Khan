@@ -1,15 +1,40 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Categories = ({ categories }) => {
   return (
-    <div className="grid grid-cols-1 gap-5 p-6">
+    <div className="grid grid-cols-1 gap-5 p-10">
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          `font-bold ${
+            isActive
+              ? "text-white bg-[#9538E2] btn rounded-full"
+              : " btn rounded-full hover:text-[#9538E2]"
+          }`
+        }
+      >
+        All
+      </NavLink>
       {categories.map((category) => (
-        <Link
+        // <Link
+        //   key={category.category}
+        //   to={`/category/${category.category}`}
+        //   className="btn rounded-full"
+        // >
+        //   {category.category}
+        // </Link>
+        <NavLink
           key={category.category}
           to={`/category/${category.category}`}
-          className="btn"
+          className={({ isActive }) =>
+            `font-bold ${
+              isActive
+                ? "text-white bg-[#9538E2] btn rounded-full"
+                : " btn rounded-full hover:text-[#9538E2]"
+            }`
+          }
         >
           {category.category}
-        </Link>
+        </NavLink>
       ))}
     </div>
   );

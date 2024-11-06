@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
-    "category": "All",
-    "slug": "all"
-  },
-  {
-    "id": 2,
     "category": "Smartphone",
     "slug": "smartphone"
   },
   {
-    "id": 3,
+    "id": 2,
     "category": "Laptop",
     "slug": "laptop"
   },
   {
-    "id": 4,
+    "id": 3,
     "category": "Gadget",
     "slug": "gadget"
+  },
+  {
+    "id": 4,
+    "category": "Tablet",
+    "slug": "tablet"
   }
 ]

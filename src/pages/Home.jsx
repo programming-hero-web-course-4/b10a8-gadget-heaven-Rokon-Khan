@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "../components/Banner";
 import Categories from "../components/Categories";
@@ -9,6 +10,9 @@ const Home = () => {
   console.log(categories);
   return (
     <div>
+      <Helmet>
+        <title>Home | Gadget Heaven</title>
+      </Helmet>
       <Header></Header>
       <Banner></Banner>
       <div>
