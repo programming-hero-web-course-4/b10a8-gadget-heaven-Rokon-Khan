@@ -1,8 +1,25 @@
-# React + Vite
+# PH Assignment-08 Batch-10 (Gadget Heaven) On React Router Applications
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# https://bddream-11.surge.sh/](https://ph-assignment-gadget-heaven.surge.sh/
 
-Currently, two official plugins are available:
+## The Short Description of the PH-Assignment-8
+- "Gadget Heaven" is a sleek web application built using React Router, designed for tech enthusiasts to explore and purchase the latest gadgets. The app offers a seamless, single-page experience with intuitive navigation and dynamic routing. Users can browse various product categories, view detailed descriptions, and add items to their cart, all without refreshing the page. React Router ensures smooth transitions between pages, making the experience fast and responsive. With nested routes for product details and a well-structured layout, Gadget Heaven delivers a modern shopping experience optimized for speed and user convenience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Assignment Attachment Link
+## https://drive.google.com/file/d/16_ybDZUAaDoTtzRy56X8-uXtIkc55NER/view?usp=sharing
+
+## List of Fundamentals Concept of React
+- React Component
+- React useState
+- React UseEffect
+- React Conditional Rendering
+- React Router
+## What have you used for handling and managing data?
+ - The Local Storage
+## 5 key features of this project
+ 1. Product Shows By Categories
+ 2. Product Add to Cart
+ 3. Product Add to Wishlist
+ 4. Product Purchage
+ 5. Product New Collections Page
+
