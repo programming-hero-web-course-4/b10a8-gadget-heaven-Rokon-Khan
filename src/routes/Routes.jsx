@@ -3,6 +3,7 @@ import ProductCards from "../components/ProductCards";
 import MainLaout from "../layouts/MainLayout";
 import CardDetails from "../pages/CardDetails";
 import Dashboard from "../pages/Dashboard";
+import Error from "../pages/Error";
 import Home from "../pages/Home";
 import New from "../pages/New";
 import Statistics from "../pages/Statistics";
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
         loader: () => fetch("../products.json"),
       },
     ],
+  },
+  {
+    path: "*",
+    element: <Error></Error>,
   },
 ]);
 
